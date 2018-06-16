@@ -1,6 +1,8 @@
 body {
     padding: 0px;
     margin: 0px;
+    font-family: Calibri, sans-serif;
+    text-transform: uppercase;
 }
 header {
     padding: 0px;
@@ -11,6 +13,7 @@ header {
 section {
     padding: 0px;
     margin: 0px;
+    clear: both;
 }
 div {
     padding: 0px;
@@ -22,8 +25,12 @@ div {
     width: 100%;
     clear: both;
 }
+.content {
+    padding: 0px;
+    margin: 0px;
+}
 .container {
-    width: 1140px;
+    width: 960px;
     margin: 0 auto;
 }
 .logo {
@@ -31,4 +38,102 @@ div {
     margin-top: 10px;
     cursor: pointer;
     float: left;
+}
+nav {
+    float: right;
+    margin-top: 55px;
+}
+.menu {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+.menu li {
+    float: left;
+    display: block;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.menu a:hover {
+    border-bottom: 1px solid #fff;
+}
+.view_pizza {
+    background: url("../img/background.jpg") no-repeat center top/cover;
+    height: 740px;
+}
+.description_view_block {
+    padding-top: 65px;
+}
+.text_view {
+    float: left;
+    width: 460px;
+}
+.pizza_view {
+    float: right;
+    width: 460px;
+}
+.menu_pizza {
+    background: url("../img/flour.jpg")no-repeat center top/cover;
+}
+.title_menu {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+h1 {
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    font-size: 50px;
+}
+.cart {
+    width: 240px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+}
+.cart img {
+    width: 200px;
+}
+.cart .name {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.cart .cost {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.cart .add-to-cart {
+    background: #fff;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    margin: 10px 0;
+}
+.cart .description {
+    font-size: 15px;
+    margin: 20px 0;
+}
+.cart_block {
+    margin-right: -30px;
+}
+.goods-out::after {
+    content: "";
+    display: block;
+    clear: both;
 }
