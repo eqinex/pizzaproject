@@ -63,25 +63,25 @@ nav {
 .menu a:hover {
     border-bottom: 1px solid #fff;
 }
-.view_pizza {
+.view-pizza {
     background: url("../img/background.jpg") no-repeat center top/cover;
     height: 740px;
 }
-.description_view_block {
+.description-view-block {
     padding-top: 65px;
 }
-.text_view {
+.text-view {
     float: left;
     width: 460px;
 }
-.pizza_view {
+.pizza-view {
     float: right;
     width: 460px;
 }
-.menu_pizza {
+.menu-pizza {
     background: url("../img/flour.jpg")no-repeat center top/cover;
 }
-.title_menu {
+.title-menu {
     text-align: center;
     padding-top: 30px;
     margin-bottom: 50px;
@@ -124,16 +124,47 @@ h1 {
     font-size: 16px;
     border: none;
     margin: 10px 0;
+    cursor: pointer;
+}
+.cart .add-to-cart:hover {
+    background: #f9a54b;
+}
+.cart .add-to-cart:active {
+    background: #c13f22;
 }
 .cart .description {
     font-size: 15px;
     margin: 20px 0;
 }
-.cart_block {
+.cart-block {
     margin-right: -30px;
 }
 .goods-out::after {
     content: "";
     display: block;
     clear: both;
+}
+.menu-cart {
+    background: url("../img/salat.jpg") no-repeat center top/cover;
+    height: 740px;
+}
+.darken-background {
+    height: 740px;
+    background: rgba(0,0,0,0.4);
+}
+.cart-list-block {
+    background: rgba(181,181,181,0.8);
+    height: 500px;
+    border-radius: 25px;
+    padding: 30px;
+}
+.main-cart {
+    text-align: center;
+    font-size: 35px;
+}
+.main-cart img {
+    height: 75px;
+}
+.main-cart .fas {
+    cursor: pointer;
 }
