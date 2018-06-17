@@ -163,8 +163,42 @@ h1 {
     font-size: 35px;
 }
 .main-cart img {
-    height: 75px;
+    height: 60px;
 }
-.main-cart .fas {
+.main-cart .delete-goods {
     cursor: pointer;
+    display: block;
+    float: left;
+    width: 30px;
+    margin-right: 40px;
+}
+.in-show-cart {
+    text-transform: none;
+    font-size: 20px;
+}
+.main-cart .name-in-main-cart {
+    float: left;
+    margin-right: 30px;
+}
+.main-cart hr {
+    display: block;
+    clear: both;
+}
+.main-cart .count-in-main-cart {
+    float: right;
+    width: 50px;
+}
+.main-cart .buttons-paragraph {
+    float: right;
+    margin-left: 30px;
+    cursor: pointer;
+ }
+.main-cart .img-in-main-cart {
+    float: right;
+    margin-left: 30px;
+}
+.main-cart .cost-in-main-cart {
+    float: right;
+    margin-left: 30px;
+    width: 100px;
 }

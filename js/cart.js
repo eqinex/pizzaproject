@@ -7,28 +7,35 @@ function loadCart(){
         cart = JSON.parse(localStorage.getItem('cart')); // расшифровка обратно в массив
         showCart();
     }else{
-        $('.main-cart').html('Вы не выбрали ни одной нашей вкусняшки!');
+        $('.main-cart').html('Ваш список покупок пуст!');
     }
 }
 
 function showCart() {
     //вывод корзины
     if (!isEmpty(cart)){
-        $('.main-cart').html('Вы не выбрали ни одной нашей вкусняшки!');
+        $('.main-cart').html('Ваш список покупок пуст!');
     }else {
         $.getJSON('goods.json', function (data) {
             var goods = data;
             var out = '';
             //перебор корзины , id - товар
             for (var id in cart) {
-                out += '<i class="fas fa-trash-alt fa-xs del-goods" data-id="' + id + '"></i>';
-                out += '' + goods[id].name + '';
-                out += '' + cart[id] + '';
-                out += '<img src="img/' + goods[id].img + '">';
-                out += '<hr>'
+                out += '<div class="paragraph-main-cart">';
+                out += '<div class="delete-goods"><i class="fas fa-trash-alt fa-xs del-goods" data-id="' + id + '"></i></div>';
+                out += '<div class="name-in-main-cart">' + goods[id].name + '</div>';
+                out += '<div class="img-in-main-cart"><img src="img/' + goods[id].img + '"></div>';
+                out += '<div class="cost-in-main-cart">'+cart[id]*goods[id].cost+'<i class="fas fa-ruble-sign fa-xs"></i></div>';
+                out += '<div class="buttons-paragraph"><i class="fas fa-plus-square fa-xs plus-goods" data-id="' + id + '"></i>';
+                out += '<i class="fas fa-minus-square fa-xs minus-goods" data-id="' + id + '"></i></div>';
+                out += '<div class="count-in-main-cart">' + cart[id] + '<span class="in-show-cart">Шт.</span></div>';
+                out += '</div>';
+                out += '<hr>';
             }
             $('.main-cart').html(out);
             $('.del-goods').on('click', delGoods);
+            $('.plus-goods').on('click', plusGoods);
+            $('.minus-goods').on('click', minusGoods);
         })
     }
 }
@@ -37,6 +44,26 @@ function showCart() {
 function delGoods() {
     var id = $(this).attr('data-id'); //получаем ид по которому кликнули
     delete cart[id]; //удаяем
+    saveCart(); //сохраняем состояние в localStorage
+    showCart(); //перерисовываем
+}
+
+//добавление
+function plusGoods() {
+    var id = $(this).attr('data-id'); //получаем ид по которому кликнули
+    cart[id]++;
+    saveCart(); //сохраняем состояние в localStorage
+    showCart(); //перерисовываем
+}
+
+//уменьшение
+function minusGoods() {
+    var id = $(this).attr('data-id'); //получаем ид по которому кликнули
+    if (cart[id] == 1){
+        delete cart[id];
+    }else{
+        cart[id]--;
+    }
     saveCart(); //сохраняем состояние в localStorage
     showCart(); //перерисовываем
 }
