@@ -202,3 +202,48 @@ h1 {
     margin-left: 30px;
     width: 100px;
 }
+.order-section {
+    height: 300px;
+    width: 600px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 30px;
+    margin: 0 auto;
+}
+.email-field label {
+    color: #fff;
+    text-transform: none;
+    font-size: 25px;
+}
+.email-field span {
+    color: red;
+    font-size: 25px;
+}
+.email-field input[type="text"] {
+    display: block;
+    float: right;
+    margin-right: 100px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.button-main {
+    background: #fff;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.button-main:hover {
+    background: #f9a54b;
+}
+.button-main:active {
+    background: #c13f22;
+}
+.order-section .set {
+    clear: both;
+    margin-bottom: 30px;
+    text-align: center;
+}
