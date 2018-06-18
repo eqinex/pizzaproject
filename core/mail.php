@@ -1,4 +1,3 @@
-<meta charset="utf-8">
 <?php
 // читка jsonа
 
@@ -24,7 +23,7 @@ foreach ($cart as $id=>$count) {
 }
 $message .= 'Всего: '.$sum.' рублей'.'<br>';
 
-print_r($message);
+//print_r($message);
 
 $to = 'temmaz@mail.ru'.',';  //мой мейл и указываю, кому еще
 $to .= $_POST['email']; //копия письма
@@ -36,4 +35,4 @@ $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 //отправка
 $m = mail($to, 'Заказ в магазине', $spectext.$message.'</body></html>', $headers);
 
-if ($m) { echo 'Сообщение отправлено'; } else { echo 'Сообщение не отправлено'; }
+if ($m) { echo 1; } else { echo 2; }
