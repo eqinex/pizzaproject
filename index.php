@@ -1,4 +1,4 @@
-<?php require "header.php" ?>
+<?php require "header.php"; ?>
 
     <section class="view-pizza">
         <div class="darken-background">

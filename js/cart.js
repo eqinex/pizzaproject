@@ -90,6 +90,7 @@ function sendEmail() {
             $.post(   //ajax запрос на серв
                 "core/mail.php",
                 {
+
                     "ename" : ename,
                     "email" : email,
                     "ephone" : ephone,
@@ -97,7 +98,7 @@ function sendEmail() {
                 },
                 function (data) {
                     // console.log(data);
-                    if (data == 'Сообщение отправлено') {
+                    if (data == 1) {
                         alert('Заказ отправлен');
                     }else{
                         alert('Повторите заказ!');
