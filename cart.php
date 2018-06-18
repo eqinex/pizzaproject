@@ -26,7 +26,7 @@
                     <div class="set"><label>Email</label><span> * </span><input type="text" id="email" placeholder="temmaz@mail.ru" size="40"></div>
                     <div class="set"><label>Телефон</label><span> * </span><input type="text" id="ephone" placeholder="312312312" size="40"></div>
                     <hr>
-                    <div class="set"><button class="button-main">Купить</button></div>
+                    <div class="set"><button class="button-main send-email">Заказать</button></div>
                 </div>
             </div>
         </div>
