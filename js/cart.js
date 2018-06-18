@@ -81,6 +81,38 @@ function isEmpty(object) {
     return false;
 }
 
+function sendEmail() {
+    var ename = $('#ename').val();
+    var email = $('#email').val();
+    var ephone = $('#ephone').val();
+    if (ename != '' && email != '' & ephone != '') {
+        if (isEmpty(cart)){
+            $.post(   //ajax запрос на серв
+                "core/mail.php",
+                {
+                    "ename" : ename,
+                    "email" : email,
+                    "ephone" : ephone,
+                    "cart" : cart
+                },
+                function (data) {
+                    // console.log(data);
+                    if (data == 'Сообщение отправлено') {
+                        alert('Заказ отправлен');
+                    }else{
+                        alert('Повторите заказ!');
+                    }
+                }
+            );
+        }else{
+            alert('Пуста корзина');
+        }
+    }else{
+        alert('Заполните поля');
+    }
+}
+
 $(document).ready(function () {
     loadCart();
+    $('.send-email').on('click', sendEmail); //отправка письма с заказом
 });
