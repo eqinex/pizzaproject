@@ -24,6 +24,7 @@
                 <div class="email-field">
                     <div class="set"><label>Ваше имя</label><span> * </span><input type="text" id="ename" placeholder="Мазитов Тимур" size="40"></div>
                     <div class="set"><label>Email</label><span> * </span><input type="text" id="email" placeholder="temmaz@mail.ru" size="40"></div>
+                    <div class="set"><label>Адресс</label><span> * </span><input type="text" id="eaddress" placeholder="ул. Московская д.1 кв.2" size="40"></div>
                     <div class="set"><label>Телефон</label><span> * </span><input type="text" id="ephone" placeholder="312312312" size="40"></div>
                     <hr>
                     <div class="set"><button class="button-main send-email">Заказать</button></div>

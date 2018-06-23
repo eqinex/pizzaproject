@@ -10,6 +10,7 @@ $message .= '<h1>Заказ в пицерии</h1>';  //конкотенируе
 $message .= '<p>Телефон: '.$_POST['ephone'].'</p>';
 $message .= '<p>Почта: '.$_POST['email'].'</p>';
 $message .= '<p>Клиент: '.$_POST['ename'].'</p>';
+$message .= '<p>Адрес:'.$_POST['eaddress'].'</p>';
 
 $cart = $_POST['cart'];
 $sum = 0;
