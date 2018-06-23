@@ -6,7 +6,7 @@
                 <div class="content">
                     <div class="description-view-block">
                         <div class="text-view">
-
+                            Приходите к нам!<br>Вам рады всегда!
                         </div>
                         <div class="pizza-view">
                             <img src="img/neapolitana.png" alt="pizza-view" height="490px">

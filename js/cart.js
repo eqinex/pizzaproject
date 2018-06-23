@@ -85,6 +85,7 @@ function sendEmail() {
     var ename = $('#ename').val();
     var email = $('#email').val();
     var ephone = $('#ephone').val();
+    var eaddress = $('#eaddress').val();
     if (ename != '' && email != '' & ephone != '') {
         if (isEmpty(cart)){
             $.post(   //ajax запрос на серв
@@ -94,6 +95,7 @@ function sendEmail() {
                     "ename" : ename,
                     "email" : email,
                     "ephone" : ephone,
+                    "eaddress" : eaddress,
                     "cart" : cart
                 },
                 function (data) {
