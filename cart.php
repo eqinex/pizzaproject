@@ -34,7 +34,4 @@
     </div>
 </section>
 
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/cart.js"></script>
-</body>
-</html>
+<?php require "footer.php"; ?>

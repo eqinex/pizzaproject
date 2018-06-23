@@ -10,6 +10,12 @@ header {
     height: 120px;
     background-color: #000;
 }
+footer {
+    padding: 0px;
+    margin: 0px;
+    height: 120px;
+    background-color: #000;
+}
 section {
     padding: 0px;
     margin: 0px;
@@ -251,4 +257,7 @@ h1 {
     clear: both;
     margin-bottom: 30px;
     text-align: center;
+}
+.mini-cart {
+    color: #fff;
 }

@@ -14,7 +14,7 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <a href="#">Главная</a>
+                        <a href="/pizzaproject">Главная</a>
                     </li>
                     <li>
                         <a href="#">О нас</a>
