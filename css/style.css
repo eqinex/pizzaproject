@@ -13,7 +13,7 @@ header {
 footer {
     padding: 0px;
     margin: 0px;
-    height: 300px;
+    height: 120px;
     background-color: #000;
 }
 section {
@@ -327,4 +327,29 @@ h1 {
 }
 .enter-button:active {
     background: #c13f22;
+}
+.footer-block {
+    padding-top: 50px;
+}
+.footer-info {
+    color: #fff;
+    width: 600px;
+    float: left;
+}
+.cart-info {
+    /*width: 300px;*/
+    /*float: right;*/
+    /*color: #fff;*/
+    /*margin-left: 30px;*/
+    position: fixed;
+    top: 500px;
+    right: 50px;
+    padding: 5px;
+    border: 1px solid #fff;
+}
+.error {
+    color: red;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
 }

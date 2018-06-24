@@ -1,24 +1,4 @@
 <?php require "header.php"; ?>
-<?php if(isset($error)){echo $error;}?>
-    <script type="text/javascript">
-        function autorization()
-        {
-            $.ajax({
-                type: 'POST',
-                url: 'auth.php',
-                dataType:'json',
-                data: {username: $('#username1').val(), password: $('#password1').val()},
-
-                success: function(data){
-
-                    $('#error2').text(data.error).show().delay(2000).fadeOut(800);
-                }
-            });
-            setTimeout(function enter(){ //переходная ссылка
-                window.location.href = "/pizzaproject";}, 1000);
-
-        }
-    </script>
     <section class="view-pizza">
         <div class="darken-background">
             <div class="container">

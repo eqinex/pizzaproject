@@ -15,7 +15,7 @@ if(!isset($_COOKIE['user_id'])) {
                 header('Location: '. $home_url);
             }
             else {
-                $error = 'Извините, вы должны ввести правильные имя пользователя и пароль';
+                $error = 'Некорректные данные';
             }
         }
         else {
@@ -47,7 +47,7 @@ if(!isset($_COOKIE['user_id'])) {
                 <hr>
                 <button class="enter-button" name="submit">войти</button>
                 <a href="/pizzaproject/signup.php">Регистрация</a>
-                <!--                         <div class = "error2" id = "error2"></div>-->
+                <div class="error"><?php if(isset($error)){echo $error;}?></div>
             </form>
             <?php
         }else {
@@ -68,14 +68,13 @@ if(!isset($_COOKIE['user_id'])) {
                         <a href="/pizzaproject">Главная</a>
                     </li>
                     <li>
-                        <a href="#">О нас</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакты</a>
-                    </li>
-                    <li>
                         <a href="/pizzaproject/cart.php">Список покупок</a>
                     </li>
+                    <?php
+                    if ($_COOKIE['username'] == "admin") {
+                        echo "<li><a href='./admin/admin.php'>Админ панель</a></li>";
+                    }
+                    ?>
                 </ul>
             </nav>
         </div>
