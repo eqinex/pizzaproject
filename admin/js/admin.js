@@ -88,8 +88,28 @@ function saveToDb(){
         );
     }
 }
+function delToDb() {
+    var id = $('#gid').val();
+    $.post(
+        "core.php",
+        {
+            "action": "deleteGoods",
+            "id": id
+        },
+        function (data) {
+            if (data == 1) {
+                alert('Запись удалена');
+                init();
+            } else {
+                console.log(data);
+            }
+        }
+    );
+}
+
 
 $(document).ready(function () {
     init();
     $('.add-to-db').on('click', saveToDb);
+    $('.delete-to-db').on('click',delToDb);
 });

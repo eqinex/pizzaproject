@@ -28,18 +28,20 @@ if(isset($_POST['signup_submit'])){
 <section class="flour">
     <div class="container">
         <div class="content">
-            <div class="signup">
-                <h1>Регистрация</h1>
-                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" METHOD='POST'>
-                    <label for="username">Введите ваш логин:</label>
-                    <input type="text" name="username">
-                    <label for="password">Введите ваш пароль:</label>
-                    <input type="password" name="password">
-                    <label for="password">Повторите пароль:</label>
-                    <input type="password" name="password2">
-                    <hr>
-                    <button class="button-main" name="signup_submit">Зарегистрироваться</button>
-                </form>
+            <div class="signup-move">
+                <div class="signup">
+                    <h1>Регистрация</h1>
+                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" METHOD='POST'>
+                        <label for="username">Введите ваш логин:</label>
+                        <input type="text" name="username">
+                        <label for="password">Введите ваш пароль:</label>
+                        <input type="password" name="password">
+                        <label for="password">Повторите пароль:</label>
+                        <input type="password" name="password2">
+                        <hr>
+                        <button class="button-main" name="signup_submit">Зарегистрироваться</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

@@ -4,10 +4,12 @@
             <div class="footer-info">
                 © 2018–<?php echo date('Y')?> Лучшая пицца в магнитогорске - это пицца от Тимура Мазитова!
             </div>
-            <div class="cart-info">
-                Ваша корзина:
-                <div class="mini-cart"></div>
-            </div>
+            <a href="/pizzaproject/cart.php">
+                <div class="cart-info">
+                    Корзина:
+                    <div class="mini-cart"></div>
+                </div>
+            </a>
         </div>
     </div>
 </footer>

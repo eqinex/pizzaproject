@@ -88,6 +88,22 @@ VALUES ('$name', '$cost', '$descr', '$ord', '$img')";
     writeJSON();
 }
 
+function deleteGoods() {
+    $conn = connect();
+    $id = $_POST['gid'];
+
+    $sql = "DELETE FROM goods WHERE id='$id'";
+
+    if (mysqli_query($conn, $sql)) {
+        echo "1";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
+    mysqli_close($conn);
+    writeJSON();
+}
+
 //перезапись jsona
 function writeJSON(){
     $conn = connect();

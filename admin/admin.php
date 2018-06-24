@@ -35,6 +35,7 @@
                         <input type="hidden" id="gid">
                         <hr>
                         <div class="set"><button class="button-main add-to-db">Обновить</button></div>
+                        <div class="set"><button class="button-main delete-to-db">Удалить</button></div>
                     </div>
                 </form>
             </div>
