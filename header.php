@@ -41,11 +41,11 @@ if(!isset($_COOKIE['user_id'])) {
             <!--                     <form action="javascript:autorization();">-->
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                 <label for="username">Логин:</label>
-                <input type="text" name="username" id="username1">
+                <input type="text" name="username" id="username1" size="10">
                 <label for="password">Пароль:</label>
-                <input type="password" name="password" id="password1">
+                <input type="password" name="password" id="password1" size="10">
                 <hr>
-                <button class="button-main" name="submit">войти</button>
+                <button class="enter-button" name="submit">войти</button>
                 <a href="/pizzaproject/signup.php">Регистрация</a>
                 <!--                         <div class = "error2" id = "error2"></div>-->
             </form>
@@ -54,7 +54,7 @@ if(!isset($_COOKIE['user_id'])) {
             ?>
             <label>Вы вошли как: <?php echo $_COOKIE['username']; ?></label>
             <hr>
-            <a href="exit.php"><button class="button-main">Выйти</button></a>
+            <a href="exit.php"><button class="enter-button">Выйти</button></a>
             <?php
         }
         ?>

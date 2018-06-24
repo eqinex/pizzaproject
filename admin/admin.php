@@ -30,7 +30,7 @@
                         <div class="set"><label>Имя: </label><input type="text" id="gname" size="20"></div>
                         <div class="set"><label>Стоимость: </label><input type="text" id="gcost" size="20"></div>
                         <div class="set"><label>Описание: </label><textarea id="gdescr"></textarea></div>
-                        <div class="set"><label>Изображение: </label><input type="file" id="gimg" size="20"></div>
+                        <div class="set"><label>Изображение: </label><input type="text" id="gimg" size="20"></div>
                         <div class="set"><label>Порядок: </label><input type="text" id="gorder" size="20"></div>
                         <input type="hidden" id="gid">
                         <hr>
