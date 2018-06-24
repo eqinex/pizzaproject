@@ -24,17 +24,19 @@
                 <h1>Товар</h1>
             </div>
             <div class="order-section clearfix">
-                <div class="email-field">
-                    <div class="goods-out"></div>
-                    <div class="set"><label>Имя: </label><input type="text" id="gname" size="20"></div>
-                    <div class="set"><label>Стоимость: </label><input type="text" id="gcost" size="20"></div>
-                    <div class="set"><label>Описание: </label><textarea id="gdescr"></textarea></div>
-                    <div class="set"><label>Изображение: </label><input type="text" id="gimg" size="20"></div>
-                    <div class="set"><label>Порядок: </label><input type="text" id="gorder" size="20"></div>
-                    <input type="hidden" id="gid">
-                    <hr>
-                    <div class="set"><button class="button-main add-to-db">Обновить</button></div>
-                </div>
+                <form enctype='multipart/form-data'>
+                    <div class="email-field">
+                        <div class="goods-out"></div>
+                        <div class="set"><label>Имя: </label><input type="text" id="gname" size="20"></div>
+                        <div class="set"><label>Стоимость: </label><input type="text" id="gcost" size="20"></div>
+                        <div class="set"><label>Описание: </label><textarea id="gdescr"></textarea></div>
+                        <div class="set"><label>Изображение: </label><input type="file" id="gimg" size="20"></div>
+                        <div class="set"><label>Порядок: </label><input type="text" id="gorder" size="20"></div>
+                        <input type="hidden" id="gid">
+                        <hr>
+                        <div class="set"><button class="button-main add-to-db">Обновить</button></div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

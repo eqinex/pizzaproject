@@ -7,13 +7,12 @@ body {
 header {
     padding: 0px;
     margin: 0px;
-    height: 120px;
     background-color: #000;
 }
 footer {
     padding: 0px;
     margin: 0px;
-    height: 120px;
+    height: 300px;
     background-color: #000;
 }
 section {
@@ -260,4 +259,57 @@ h1 {
 }
 .mini-cart {
     color: #fff;
+}
+.register {
+    border: 1px solid #fff;
+}
+.flour {
+    background: url("../img/flour.jpg")no-repeat center top/cover;
+}
+.signup {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 30px;
+    border-radius: 5px;
+    color: #fff;
+}
+.signup label {
+    display: block;
+    padding: 20px;
+}
+.signup input {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.registration {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 200px;
+    float: right;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    color: #fff;
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+.registration input {
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.registration a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
 }
