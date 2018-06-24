@@ -10,6 +10,12 @@ header {
     height: 120px;
     background-color: #000;
 }
+footer {
+    padding: 0px;
+    margin: 0px;
+    height: 120px;
+    background-color: #000;
+}
 section {
     padding: 0px;
     margin: 0px;
@@ -213,6 +219,7 @@ h1 {
     border-radius: 25px;
     padding: 30px;
     margin: 0 auto;
+    display: block;
 }
 .email-field label {
     color: #fff;
@@ -251,4 +258,104 @@ h1 {
     clear: both;
     margin-bottom: 30px;
     text-align: center;
+}
+.mini-cart {
+    color: #fff;
+}
+.register {
+    border: 1px solid #fff;
+}
+.flour {
+    background: url("../img/flour.jpg")no-repeat center top/cover;
+    height: 740px;
+}
+.signup-move {
+    padding-top: 100px;
+}
+.signup {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 30px;
+    border-radius: 5px;
+    color: #fff;
+}
+.signup label {
+    display: block;
+    padding: 20px;
+}
+.signup input {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.registration {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    float: right;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    color: #fff;
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 10px;
+}
+.registration input {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.registration a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.enter-button {
+    background: #fff;
+    padding: 5px 20px;
+    color: #000;
+    font-size: 10px;
+    border: none;
+    margin: 5px 0;
+    cursor: pointer;
+    cursor: pointer;
+}
+.enter-button:hover {
+    background: #f9a54b;
+}
+.enter-button:active {
+    background: #c13f22;
+}
+.footer-block {
+    padding-top: 50px;
+}
+.footer-info {
+    color: #fff;
+    width: 600px;
+    float: left;
+}
+.cart-info {
+    width: 65px;
+    display: block;
+    cursor: pointer;
+    background: #f9a54b;
+    position: fixed;
+    top: 500px;
+    right: 50px;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+}
+.error {
+    color: red;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
 }

@@ -15,4 +15,7 @@ switch ($action) {
     case "newGoods":
         newGoods();
         break;
+    case "deleteGoods":
+        deleteGoods();
+        break;
 }
